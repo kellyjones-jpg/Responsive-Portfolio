@@ -1,3 +1,8 @@
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
 body {
     background: url(../images/cheap_diagonal_fabric.png);
     margin:0;
@@ -29,6 +34,10 @@ header, .content, footer {
     width: 100%;
     min-height:50px;
     box-sizing: border-box;
+  }
+
+  .main {
+    width: 100%;
   }
 
   .container {
@@ -164,4 +173,34 @@ li:not(:first-child):before {
   height: 40px;
   text-align: center;
   font-weight: bold;
+}
+
+@media screen and (max-width: 980px) {
+  .container {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .content {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+ .name {
+   width: 100%;
+   margin-left: 25%;
+   margin-bottom: 10px;
+ } 
+ ul {
+   width: 100%;
+   text-align: center;
+ }
 }
